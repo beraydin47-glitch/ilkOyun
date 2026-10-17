@@ -1,2 +1,4 @@
 rekor.txt
 __pycache__/
+.buildozer/
+bin/
