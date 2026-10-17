@@ -6,7 +6,7 @@ source.dir = .
 source.include_exts = py
 source.exclude_dirs = .github, bin
 version = 1.0
-requirements = python3,pygame
+requirements = python3==3.10.12,hostpython3==3.10.12,pygame
 orientation = portrait
 fullscreen = 1
 
@@ -16,7 +16,7 @@ android.archs = arm64-v8a, armeabi-v7a
 android.accept_sdk_license = True
 android.ndk = 25b
 
-# pygame recipe, p4a develop dalindaki Python 3.14 ile derlenmiyor
+# p4a pygame recipe (2.1) Cython C dosyalari Python 3.11+ ile derlenmiyor
 p4a.branch = v2024.01.21
 
 [buildozer]
