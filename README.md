@@ -14,13 +14,17 @@ Her 4 yemde yılan hızlanır. En yüksek puan `rekor.txt` dosyasına kaydedilir
 `main.py` dosyasını Pydroid 3'te aç ve ▶ düğmesine bas. pygame uygulamayla birlikte geliyor.
 
 ### Termux
+pygame Termux'un ana deposunda yok, TUR deposundan kurulur:
 ```bash
 pkg update && pkg upgrade -y
-pkg install x11-repo -y
+pkg install x11-repo tur-repo -y
 pkg install python python-numpy python-pygame termux-x11-nightly git -y
 git clone https://github.com/beraydin47-glitch/ilkOyun.git
 cd ilkOyun
 ```
+Depo gizli (private) ise `git clone` kullanıcı adı ve şifre sorar. Şifre yerine
+GitHub'da oluşturduğun bir Personal Access Token girmen gerekir.
+
 Termux:X11 uygulamasını da kur (F-Droid / GitHub). Sonra:
 ```bash
 termux-x11 :0 &
